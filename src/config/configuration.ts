@@ -11,7 +11,7 @@ export const config = registerAs('config', () => ({
     port: parseInt(process.env.PORT, 10) || 3000,
   },
   swagger: {
-    enabled: Boolean(process.env.SWAGGER_ENABLED.toLowerCase() === 'true'),
+    enabled: Boolean(process.env.SWAGGER_ENABLED?.toLowerCase() === 'true'),
     path: process.env.SWAGGER_PATH,
   },
 }));
